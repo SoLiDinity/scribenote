@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}" />
+
+    <script src="https://kit.fontawesome.com/f2ead6d816.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon" />
+
+    <title>Note App</title>
+  </head>
+  <body>
+    <div id="menuTab">
+      <button id="saveNotes" class="circle no-border no-outline">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+      <button id="addNotes" class="circle no-border no-outline">
+        <i class="fa-solid fa-notes-medical"></i>
+      </button>
+      <button id="resetAllNotes" class="circle no-border no-outline">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
+    <div id="mainContainer"></div>
+  </body>
+
+  <script type="module" src="{{url_for('static', filename='scripts/index.js')}}"></script>
+</html>

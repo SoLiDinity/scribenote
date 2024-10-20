@@ -1,0 +1,219 @@
+#mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  --half-black: rgba(0, 0, 0, 0.15);
+  --grid-size: 100px;
+
+  background-color: white;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--half-black) 25%,
+      var(--half-black) 26%,
+      transparent 27%,
+      transparent
+    ),
+    linear-gradient(90deg, transparent 24%, var(--half-black) 25%, var(--half-black) 26%, transparent 27%, transparent);
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+#myButton {
+  font-size: 24px;
+  background-color: rgb(107, 181, 255);
+  color: white;
+}
+
+#editorContainer {
+  position: fixed;
+  cursor: grab;
+}
+
+#editor {
+  width: 100%;
+  min-height: 70px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.note {
+  background-color: #f0f0f0;
+  min-width: 150px;
+  max-width: 300px;
+  min-height: 150px;
+  padding: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#menuTab {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 999;
+  bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#menuTab button {
+  font-size: clamp(28px, 2vw, 50px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  --btn-size: clamp(50px, 4vw, 100px);
+  width: var(--btn-size);
+  height: var(--btn-size);
+  padding: 1rem;
+}
+
+#addNotes {
+  background-color: rgb(85, 79, 142);
+  color: white;
+}
+
+#saveNotes {
+  background-color: rgb(85, 79, 142);
+  color: white;
+}
+
+#resetAllNotes {
+  background-color: rgb(255, 72, 72);
+  color: white;
+}
+
+#deleteNote {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -3rem;
+  bottom: 0;
+  padding: 0.75rem;
+  background-color: rgb(255, 72, 72);
+  color: white;
+}
+
+#popup {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.382);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#alertLogoContainer {
+  width: 100%;
+  background-color: rgb(255, 72, 72);
+  --border-radius-alert: 15px;
+  border-top-left-radius: var(--border-radius-alert);
+  border-top-right-radius: var(--border-radius-alert);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alertLogoContainer  i {
+  font-size: 48px;
+  margin: 1rem;
+  color: white;
+}
+
+#popupAlertContainer {
+  width: 250px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+#popupAlertContainer p, #popupAlertContainer h1 {
+  text-align: center;
+}
+
+#popupAlertContainer h1 {
+  margin: 1rem;
+  margin-bottom: 10px;
+  color: rgb(255, 72, 72);
+}
+
+#popupAlertContainer p {
+  --vertical-margin: 1rem;
+  margin-left: var(--vertical-margin);
+  margin-right: var(--vertical-margin);
+  margin-bottom: 20px;
+  font-size: clamp(14px, .75rem, 128px);
+}
+
+#confirmResetNotesButtons {
+  margin-bottom: 1rem;
+}
+
+#confirmResetNotesButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#confirmResetNotesButtons button{
+  font-size: 16px;
+}
+
+#cancelResetAllNotes {
+  color: gray;
+  background-color: rgb(216, 216, 216);
+}
+
+#confirmResetAllnotes {
+  background-color: rgb(255, 72, 72);
+  color: white;
+}
+
+/* #deleteNote:hover, #deleteNOte:active {} */
+
+@media (max-width: 1320px) {
+  #mainContainer {
+    --mobile-grid-size: 50px;
+    background-size: var(--mobile-grid-size) var(--mobile-grid-size);
+
+  }
+
+  #menuTab button {
+    --btn-size: 70px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+  }
+
+  #menuTab {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #menuTab {
+    gap: 1rem;
+    bottom: 2rem;
+  }
+}

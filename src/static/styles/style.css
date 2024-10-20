@@ -1,0 +1,70 @@
+
+@import url(./pages/index.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    --border-radius: 24px;
+    --border-radius-half: calc(24px/2);
+    --border-radius-quarter: calc(24px/4);
+    --border-radius-circular: 50%;
+
+    --gray-blue: rgb(68, 68, 117);
+}
+
+body {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: var(--border-radius-quarter);
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    scale: 110%;
+}
+
+button:active {
+    scale: initial;
+}
+
+.circle {
+    aspect-ratio: 1/1;
+    border-radius: var(--border-radius-circular);
+}
+
+.no-border {
+    border: none;
+}
+
+.no-outline {
+    outline: none;
+}
+
+.shadow {
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.invisible {
+    opacity: 0;
+    pointer-events: none;
+}
