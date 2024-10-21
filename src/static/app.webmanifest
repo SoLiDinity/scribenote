@@ -1,6 +1,6 @@
 {
   "id": "scribe-note-web-app-v1",
-  "start_url": "/templates/index.html",
+  "start_url": "/",
   "name": "ScribeNote",
   "short_name": "ScribeNote",
   "description": "Buat catatanmu!",
