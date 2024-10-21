@@ -68,3 +68,9 @@ button:active {
     opacity: 0;
     pointer-events: none;
 }
+
+@media (hover: none) {
+    button:hover {
+        transform: none;
+    }
+}
