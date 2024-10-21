@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="{{url_for('static', filename='app.webmanifest')}}">
 
     <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}" />
 
@@ -13,6 +14,7 @@
     <title>Note App</title>
   </head>
   <body>
+    <img id="mainLogo" src="{{url_for('static', filename='icons/512x512.png')}}" alt="">
     <div id="menuTab">
       <button id="saveNotes" class="circle no-border no-outline">
         <i class="fa-solid fa-floppy-disk"></i>
