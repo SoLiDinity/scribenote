@@ -4,9 +4,10 @@ import { showAlertPopUp } from "./utils/showAlertPopUp.js";
 
 const setupEditorListenersForAll = () => {
   const editorContainers = document.querySelectorAll('#editorContainer');
-
   editorContainers.forEach((editorContainer) => {
-    const deleteNoteBtn = editorContainer.querySelector('#deleteNote');
+    const noteOptionTab = editorContainer.querySelector('#noteOptionTab')
+
+    const deleteNoteBtn = noteOptionTab.querySelector('#deleteNote');
     if (deleteNoteBtn) {
       deleteNoteBtn.addEventListener('click', (e) => {
         const noteToDelete = e.target.closest('#editorContainer');
@@ -16,7 +17,8 @@ const setupEditorListenersForAll = () => {
         }
       });
     }
-    setupEditorListeners(editorContainer, deleteNoteBtn);
+
+    setupEditorListeners(editorContainer, noteOptionTab);
   });
 };
 
@@ -39,7 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   saveNotesBtn.addEventListener('click', () => {
-    saveNotesToLocalStorage();
+    // saveNotesToLocalStorage();
+    console.log('jepret');
+    
   });
 
   resetAllNotesBtn.addEventListener('click', () => {

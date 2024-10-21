@@ -74,7 +74,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  --btn-size: clamp(50px, 4vw, 100px);
+  --btn-size: clamp(70px, 4vw, 100px);
   width: var(--btn-size);
   height: var(--btn-size);
   padding: 1rem;
@@ -95,12 +95,36 @@
   color: white;
 }
 
-#deleteNote {
-  width: 40px;
-  height: 40px;
+#noteOptionTab {
   position: absolute;
   right: -3rem;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(207, 207, 207);
+  padding: .5rem;
+  border-radius: var(--border-radius-quarter);
+}
+
+#noteOptionTab .color-input,
+#noteOptionTab #deleteNote {
+  --noteopt-menu-sizing: 27px;
+  width: var(--noteopt-menu-sizing);
+  height: var(--noteopt-menu-sizing);
+}
+
+#noteOptionTab .color-input {
+  border: 2px solid rgb(140, 140, 140);
+}
+
+#noteOptionTab input[type='color'] {
+	opacity: 0;
+	display: block;
+  cursor: pointer;
+}
+
+#deleteNote {
   padding: 0.75rem;
   background-color: rgb(255, 72, 72);
   color: white;
@@ -132,23 +156,25 @@
   align-items: center;
 }
 
-#alertLogoContainer  i {
+#alertLogoContainer i {
   font-size: 48px;
   margin: 1rem;
   color: white;
 }
 
 #popupAlertContainer {
-  width: 250px;
+  width: clamp(250px, 50vw, 500px);
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
+  margin-bottom: 5rem;
 }
 
-#popupAlertContainer p, #popupAlertContainer h1 {
+#popupAlertContainer p,
+#popupAlertContainer h1 {
   text-align: center;
 }
 
@@ -163,7 +189,7 @@
   margin-left: var(--vertical-margin);
   margin-right: var(--vertical-margin);
   margin-bottom: 20px;
-  font-size: clamp(14px, .75rem, 128px);
+  font-size: clamp(14px, 0.75rem, 128px);
 }
 
 #confirmResetNotesButtons {
@@ -177,7 +203,7 @@
   gap: 1rem;
 }
 
-#confirmResetNotesButtons button{
+#confirmResetNotesButtons button {
   font-size: 16px;
 }
 
@@ -197,7 +223,6 @@
   #mainContainer {
     --mobile-grid-size: 50px;
     background-size: var(--mobile-grid-size) var(--mobile-grid-size);
-
   }
 
   #menuTab button {
@@ -211,9 +236,17 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px), (max-height: 500px) {
   #menuTab {
     gap: 1rem;
     bottom: 2rem;
+  }
+
+  #menuTab button {
+    --btn-size: 50px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+
+    font-size: 24px;
   }
 }
