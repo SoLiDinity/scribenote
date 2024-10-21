@@ -6,5 +6,11 @@ const getRandomPastelColor = () => {
   return `rgb(${r}, ${g}, ${b})`;
 };
 
+const rgbToHex = (rgbString) => {
+  const rgbValues = rgbString.match(/\d+/g);
+  const [r, g, b] = rgbValues.map(Number);
+  const toHex = (val) => val.toString(16).padStart(2, '0');
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+};
 
-export { getRandomPastelColor }
+export { getRandomPastelColor, rgbToHex }
