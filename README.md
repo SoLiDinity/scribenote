@@ -79,4 +79,5 @@ server akan dapat diakses melalui ``http://localhost:9000/`` atau ``http://127.0
 <hr>
 
 ## Preview
-![image](https://github.com/user-attachments/assets/0d2eb980-cf88-4f6f-a6fa-89556ba69d89)
+![image](https://github.com/user-attachments/assets/8019d90d-d1ba-44b5-a5ba-af64021d3338)
+
