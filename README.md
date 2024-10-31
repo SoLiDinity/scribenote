@@ -1,9 +1,24 @@
-# Sticky Note Web App
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Flask](https://img.shields.io/badge/flask-blue?style=for-the-badge&logo=flask&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<div align="center">
+  
+  ![ScribeNotes](https://github.com/SoLiDinity/scribenotes/blob/main/src/static/icons/152x152.png)
+  
+</div>
+
+<div align="center">
+  
+  # ScribeNotes
+  
+</div>
+
+<div align="center">  
+  
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![Flask](https://img.shields.io/badge/flask-blue?style=for-the-badge&logo=flask&logoColor=white)
+  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+   
+</div>
 
 ## 📄 Description
 Aplikasi web untuk membuat Catatan Tempel (<i>Sticky Notes</i>). Dibuat dengan memanfaatkan library Flask menggunakan bahasa Python, Javascript, HTML dan Custom CSS
