@@ -53,7 +53,7 @@ Pastikan untuk menginstall seluruh modul yang dibutuhkan pada `requirements.txt`
 pip install -r requirements.txt
 ```
 
-Untuk menjalankan server, run file `server.py` pada direktori `src\` atau jalankan command berikut pada terminal:
+Untuk menjalankan server, run file `index.py` pada direktori `src\` atau jalankan command berikut pada terminal:
 
 ```
 python src\index.py
