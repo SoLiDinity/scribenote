@@ -45,7 +45,7 @@ Akses demo aplikasi melalui [situs ini](https://solidinity-notes.vercel.app/)
 ## 📄 How To Install
 Untuk menyimpan proyek berikut ke perangkat lokal, terdapat beberapa langkah berikut yang perlu dilakukan. Jalankan command berikut pada terminal untuk melakukan klon proyek di perangkat lokal:
 ```
-git clone https://github.com/SoLiDinity/website_notes.git
+git clone https://github.com/SoLiDinity/scribenote.git
 ```
 
 Sangat direkomendasikan untuk menjalankan proyek yang diklon dengan menggunakan <i>virtual environment</i>. Anda dapat membuat `.venv` pada folder proyek dengan menggunakan command berikut:
