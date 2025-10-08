@@ -1,12 +1,12 @@
 <div align="center">
   
-  ![ScribeNotes](https://github.com/SoLiDinity/scribenotes/blob/main/src/static/icons/152x152.png)
+  ![ScribeNote](https://github.com/SoLiDinity/scribenotes/blob/main/src/static/icons/152x152.png)
   
 </div>
 
 <div align="center">
   
-  # ScribeNotes
+  # ScribeNote
   
 </div>
 
